@@ -1,0 +1,12 @@
+- name: Home
+  link: /
+- name: Play
+  link: /play
+- name: Rules
+  link: /rules
+- name: Announcements
+  link: /announcements
+- name: Tutorials
+  link: /tutorials
+- name: GitHub
+  link: https://github.com/Lokova-Studios/Server

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="/assets/images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+
+    {%- seo -%}
+    {%- feed_meta -%}
+
+    <link rel="stylesheet" href="{{ '/assets/css/dark.css' | relative_url }}">
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="wrapper">
+        <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      </div>
+      <nav class="navbar">
+        <ul>
+          {% for item in site.data.navigation %}
+            <li><a href="{{ item.link | relative_url }}">{{ item.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrapper">
+        {% include footer.html %}
+      </div>
+    </footer>
+  </body>
+</html>

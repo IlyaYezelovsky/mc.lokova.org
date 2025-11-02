@@ -1,0 +1,185 @@
+# ==============================================
+# 站点基本信息配置
+# ==============================================
+
+# 站点标题
+title: "LokovaMC"
+
+# 站点描述
+description: "真正以玩家为中心的Minecraft公益生存服"
+
+# 站点基础URL - 非常重要！
+# 对于 Cloudflare Pages，根据你的域名配置：
+#url: "https://your-domain.pages.dev"  # 使用 Cloudflare 子域名
+# 或者使用自定义域名：
+url: "https://mc.lokova.org"     # 使用自定义域名
+
+# 基础路径（如果站点不在根目录）
+baseurl: ""  # 通常留空，除非站点在子目录中
+
+# 站点语言
+lang: "zh-CN"
+encoding: "utf-8"
+timezone: "Asia/Shanghai"
+
+# ==============================================
+# 构建设置
+# ==============================================
+
+# 源目录
+source: .
+
+# 目标目录（构建输出）
+destination: ./_site
+
+# 包含的文件/目录
+include:
+  - _pages
+  - .well-known
+  - _includes/head.html
+  - _includes/footer.html
+  - assets/css/dark.css
+
+
+# 排除的文件/目录
+exclude:
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "vendor"
+  - "*.log"
+  - "*.tmp"
+
+# 保持的文件（在增量构建中保留）
+keep_files:
+  - ".git"
+  - ".svn"
+
+# 默认文件扩展名
+permalink: /:categories/:year/:month/:day/:title:output_ext
+
+# ==============================================
+# 内容设置
+# ==============================================
+
+# 默认布局
+defaults:
+#  - scope:
+#      path: ""
+#      type: "posts"
+#    values:
+#      layout: "post"
+#      comments: true
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# 文章永久链接格式
+permalink: pretty  # 可选: pretty, date, ordinal, none
+
+# 分页设置
+paginate: 5
+paginate_path: "/page:num/"
+
+# ==============================================
+# 主题和样式
+# ==============================================
+
+# 主题设置
+theme: null  # 使用 minima 主题
+
+# 或者使用远程主题
+#remote_theme: pages-themes/cayman@v0.2.0
+
+# Sass 设置
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# ==============================================
+# 插件配置
+# ==============================================
+
+# 插件列表
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# ==============================================
+# SEO 和社交媒体
+# ==============================================
+
+# SEO 标签配置
+seo:
+  title: true
+  description: false
+  author: false
+
+# 作者信息
+#author:
+#  name: "IlyaYezelovsky"
+#  email: "ilyayezelovsky@gmail.com"
+#  twitter: "ilya_sawmill"
+#  github: "IlyaYezelovsky"
+
+# 社交媒体链接
+#social:
+#  name: "IlyaYezelovsky"
+#  links:
+#    - "https://github.com/IlyaYezelovsky"
+#    - "https://x.com/ilya_sawmill"
+#    - "https://space.bilibili.com/3493084490893445"
+
+# ==============================================
+# 评论系统（可选）
+# ==============================================
+
+# Disqus 评论
+#disqus:
+#  shortname: "your-disqus-shortname"
+
+# 或者使用 Gitalk
+#gitalk:
+#  clientID: "your-github-app-client-id"
+#  clientSecret: "your-github-app-client-secret"
+#  repo: "your-repo-name"
+#  owner: "your-github-username"
+#  admin: ["your-github-username"]
+
+# ==============================================
+# 分析统计
+# ==============================================
+
+# Google Analytics
+#google_analytics: "UA-XXXXX-Y"
+
+# Cloudflare Web Analytics（推荐用于 Cloudflare Pages）
+#cloudflare_analytics: "your-cloudflare-analytics-token"
+
+# ==============================================
+# 自定义变量
+# ==============================================
+
+# 站点 logo
+#logo: "/assets/images/logo.png"
+
+# 站点图标
+favicon: "/assets/L.png"
+
+# 导航菜单
+#navigation:
+#  - title: "首页"
+#    url: "/"
+#  - title: "关于"
+#    url: "/about/"
+#  - title: "博客"
+#    url: "/blog/"
+
+# 自定义配置
+#custom:
+#  max_posts: 10
+#  show_related_posts: true
