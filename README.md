@@ -1,2 +1,2 @@
-# LokovaServices
-Some odd services on web
+# mc.lokova.org
+Where the mc.lokova.org website built
