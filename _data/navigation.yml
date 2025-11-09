@@ -1,12 +1,16 @@
-- name: Home
+- name: 主页
   link: /
-- name: Play
+- name: 加入
   link: /play
-- name: Rules
+- name: 特色
+  link: /feature
+- name: 规则
   link: /rules
-- name: Announcements
+- name: 公告
   link: /announcements
-- name: Tutorials
+- name: 教程
   link: /tutorials
-- name: Contact
+- name: 联系
   link: /contact
+- name: 主站
+  link: https://www.lokova.org
