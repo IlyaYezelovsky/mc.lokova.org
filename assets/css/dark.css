@@ -1,23 +1,27 @@
 :root {
-  --accent-color: #4870FF;
-  --bg-color: #0d1117;
-  --fg-color: #c9d1d9;
-  --muted-color: #8b949e;
-  --border-color: #30363d;
-  --code-bg: #161b22;
+    --accent-color: #4870ff;
+    --bg-color: #0d1117;
+    --fg-color: #c9d1d9;
+    --muted-color: #8b949e;
+    --border-color: #30363d;
+    --code-bg: #161b22;
+    --sans-font-family: "Noto Sans", "Noto Sans SC", sans-serif;
+    --sans-jp-font-family: "Noto Sans", "Noto Sans JP", "Noto Sans SC", sans-serif;
+    --serif-font-family: "Liberation Serif", "Noto Serif SC", serif;
+    --serif-jp-font-family: "Liberation Serif", "Noto Serif JP", "Noto Serif SC", serif;
+    --monospace-font-family: "Courier New", "Unifont", monospace;
+    --monospace-jp-font-family: "Courier New", "Unifont-JP", monospace;
 }
 
-/* base */
 html, body {
   background-color: var(--bg-color);
   color: var(--fg-color);
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--sans-font-family);
   line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
-/* links */
 a {
   color: var(--accent-color);
   text-decoration: none;
@@ -28,20 +32,18 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
-/* headings */
 h1, h2, h3, h4, h5, h6 {
   color: var(--fg-color);
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 0.2em;
   margin-top: 1.2em;
+  font-weight: bold;
 }
 
-/* paragraphs */
 p {
   margin: 0.6em 0;
 }
 
-/* blockquote */
 blockquote {
   color: var(--muted-color);
   border-left: 4px solid var(--accent-color);
@@ -50,17 +52,15 @@ blockquote {
   margin: 1em 0;
 }
 
-/* code */
 pre, code {
   background: var(--code-bg);
   color: #f0f6fc;
   border-radius: 6px;
-  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-family: var(--monospace-font-family);
 }
 pre { padding: 0.7em 1em; overflow-x: auto; }
 code { padding: 0.15em 0.3em; }
 
-/* buttons */
 button, .btn {
   background: var(--accent-color);
   color: #fff;
@@ -72,7 +72,6 @@ button, .btn {
 }
 button:hover, .btn:hover { background: #6b8cff; }
 
-/* tables */
 table {
   border-collapse: collapse;
   width: 100%;
@@ -88,7 +87,6 @@ th {
 }
 tr:nth-child(even) { background: #0f131a; }
 
-/* forms */
 input, textarea, select {
   background: var(--code-bg);
   color: var(--fg-color);
@@ -101,7 +99,6 @@ input:focus, textarea:focus, select:focus {
   outline: none;
 }
 
-/* header + footer */
 .site-header, .site-footer {
   background: #161b22;
   border-top: 1px solid var(--border-color);
@@ -124,7 +121,7 @@ input:focus, textarea:focus, select:focus {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: inline-flex; /* inline-flex让整个导航组居中 */
+  display: inline-flex;
   gap: 2rem;
 }
 
@@ -144,3 +141,117 @@ input:focus, textarea:focus, select:focus {
   text-decoration: underline;
 }
 
+/* 基础字体设置 */
+* {
+    font-family: var(--sans-font-family);
+}
+
+/* 日语和繁体中文网站 - 使用更具体的选择器 */
+html[lang="ja"] *,
+html[lang="ja-JP"] *,
+html[lang="zh-TW"] *,
+html[lang="zh-HK"] *,
+html[lang="zh-MO"] *,
+html[lang="zh-Hant"] * {
+    font-family: var(--sans-jp-font-family);
+}
+
+/* 代码块 - 使用 !important 确保覆盖 */
+pre, code, tt, kbd, samp,
+.monospace, .code, .highlight, .listing,
+pre *, code *, tt *, kbd *, samp *,
+.monospace *, .code *, .highlight *, .listing * {
+    font-family: var(--monospace-font-family) !important;
+}
+
+/* 日语和繁体中文的代码块 */
+html[lang="ja"] pre,
+html[lang="ja"] code,
+html[lang="ja"] pre *,
+html[lang="ja"] code *,
+html[lang="ja-JP"] pre,
+html[lang="ja-JP"] code,
+html[lang="ja-JP"] pre *,
+html[lang="ja-JP"] code *,
+html[lang="zh-TW"] pre,
+html[lang="zh-TW"] code,
+html[lang="zh-TW"] pre *,
+html[lang="zh-TW"] code *,
+html[lang="zh-HK"] pre,
+html[lang="zh-HK"] code,
+html[lang="zh-HK"] pre *,
+html[lang="zh-HK"] code *,
+html[lang="zh-MO"] pre,
+html[lang="zh-MO"] code,
+html[lang="zh-MO"] pre *,
+html[lang="zh-MO"] code *,
+html[lang="zh-Hant"] pre,
+html[lang="zh-Hant"] code,
+html[lang="zh-Hant"] pre *,
+html[lang="zh-Hant"] code * {
+    font-family: var(--monospace-jp-font-family) !important;
+}
+
+/* 文章内容 */
+article, blockquote, .blog-post, .post-content,
+.entry-content, .story-body,
+article *, blockquote *, .blog-post *, .post-content *,
+.entry-content *, .story-body * {
+    font-family: var(--serif-font-family) !important;
+}
+
+/* 日语和繁体中文的文章内容 */
+html[lang="ja"] article,
+html[lang="ja"] article *,
+html[lang="ja"] .blog-post,
+html[lang="ja"] .blog-post *,
+html[lang="ja-JP"] article,
+html[lang="ja-JP"] article *,
+html[lang="ja-JP"] .blog-post,
+html[lang="ja-JP"] .blog-post *,
+html[lang="zh-TW"] article,
+html[lang="zh-TW"] article *,
+html[lang="zh-TW"] .blog-post,
+html[lang="zh-TW"] .blog-post *,
+html[lang="zh-HK"] article,
+html[lang="zh-HK"] article *,
+html[lang="zh-HK"] .blog-post,
+html[lang="zh-HK"] .blog-post *,
+html[lang="zh-MO"] article,
+html[lang="zh-MO"] article *,
+html[lang="zh-MO"] .blog-post,
+html[lang="zh-MO"] .blog-post *,
+html[lang="zh-Hant"] article,
+html[lang="zh-Hant"] article *,
+html[lang="zh-Hant"] .blog-post,
+html[lang="zh-Hant"] .blog-post * {
+    font-family: var(--serif-jp-font-family) !important;
+}
+
+/* 图标字体 - 使用正确的字体栈 */
+.fa, .fas, .far, .fal, .fab,
+.fa-solid, .fa-regular, .fa-light, .fa-thin, .fa-duotone,
+.material-icons, .material-icons-outlined,
+.material-icons-round, .material-icons-sharp,
+.icon, [class*="icon-"], [class^="icon-"],
+.glyphicon, .oi,
+[class*="iconfont"], [class*="Icon"],
+[class*="icofont"], [class*="zmdi"],
+[class*="fa-"]::before,
+[class*="fa-"]::after {
+    font-family: "Font Awesome 6 Free", "Material Icons", "Segoe UI Symbol", "Symbols Nerd Font", sans-serif !important;
+}
+
+/* 数学公式 - 保留数学字体 */
+[class*="math"]:not([class*="math-"]),
+[class*="latex"]:not([class*="latex-"]),
+[class*="tex"]:not([class*="tex-"]) {
+    font-family: "KaTeX_Math", "Cambria Math", "Latin Modern Math", serif !important;
+}
+
+/* 数学公式容器 - 保持原有字体 */
+[class*="math-"] [class*="math"],
+[class*="latex-"] [class*="latex"],
+[class*="tex-"] [class*="tex"] {
+    font-family: inherit !important;
+}
