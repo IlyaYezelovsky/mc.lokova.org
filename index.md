@@ -5,7 +5,6 @@ layout: default
 
 # Home
 
-<<<<<<< Updated upstream
 LokovaMC 是一个真正以玩家为中心的 Minecraft Java 版新概念插件生存服。
 
 我们具有更方便的插件系统、更少的管理规则、更友好的游戏特性、更开放的玩家社区、更与 Mojang 隔离的社交环境。
@@ -23,5 +22,3 @@ LokovaMC 使用 Leaves 服务端，进行了多项有利于生电及普通生存
 # [立即加入](/play)
 
 ## 服务器特色
-
->>>>>>> Stashed changes
