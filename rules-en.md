@@ -1,5 +1,5 @@
 ---
-title: 规则
+title: Rules
 layout: default
 ---
 
@@ -13,7 +13,7 @@ layout: default
 
 ## Rules Text
 
-1. **Actions that affect server stability or other players' normal gameplay are prohibited**<br>
+1\. **Actions that affect server stability or other players' normal gameplay are prohibited**<br>
 Including but not limited to: intentionally creating server anomalies, causing players to be unable to connect or play normally, building server crash machines and/or chunk corruption ban devices, etc.
 
 <div class="alert alert-danger">
@@ -21,7 +21,7 @@ Penalty Method: Forced removal of violating devices and, depending on the circum
 
 </div>
 
-2. **Prohibition of Promoting Other Servers**<br>
+2\. **Prohibition of Promoting Other Servers**<br>
 This includes, but is not limited to, promoting or guiding players to other servers in any form, such as public chat, private chat, signs, books, etc. (except for official collaborations).<br>
 This rule aims to ensure the purity of the server's philosophy and prevent contamination by servers incompatible with our principles.
 
@@ -30,14 +30,14 @@ Penalty Method: First offense: Warning and a 3-day ban from sending messages in 
 
 </div>
 
-3. **Use of hacked clients, cheat mods, etc., is *ALLOWED* to Play on the Server**<br>
+3\. **Use of hacked clients, cheat mods, etc., is *ALLOWED* to Play on the Server**<br>
 Hacked clients, cheat mods, etc., are not inherently unfair, provided they do not violate other rules.<br>
 Possible Questions:<br>
 Regarding resource balance: Since this server has removed the non-renewable nature of all non-renewable resources, a strict monopoly is impossible. Players can break the so-called monopoly by investing technology and materials (no time is required, as placement can be automated using Litematica, etc.).<br>
 Regarding PVP: The PVP switch operates independently for each player. If turned off, the player cannot be attacked by other players, nor can they attack other players. Therefore, cheats like KillAura cannot affect normal players.<br>
 Regarding player base destruction: Players should use Residence to claim territory and control other players' permissions. **Destruction or theft of unclaimed areas does not violate the rules.**
 
-4. **Spamming and casual chatting are *ALLOWED*.** Messages that do not violate the rules are not considered improper. If you feel harassed, you should block the player's message instead of assuming it violates the rules.
+4\. **Spamming and casual chatting are *ALLOWED*.** Messages that do not violate the rules are not considered improper. If you feel harassed, you should block the player's message instead of assuming it violates the rules.
 
 ## Legal Regulations
 
